@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.bg--gradient {
+    overflow: hidden;
+    background: linear-gradient(217deg, rgba(250, 64, 64, 0.8), rgba(250, 64, 64, 0) 70.71%),
+        linear-gradient(127deg, #b795fc, rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 128, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    /* linear-gradient(45deg, #D7C4FC, #ABC1F6 ,#6CBAFE, #ACC9F7,#D6E1F3,#BEC3FD) */
+}
+
+.main {
+    height: 100vh;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 3rem;
+}
+
+.blur--bg {
+    background: rgba(255, 255, 255, 0.306);
+    backdrop-filter: blur(25px);
+    border-radius: 16px;
+    border: 1px solid rgba(64, 30, 30, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(125, 124, 124, 0.21);
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.margin-top--1 {
+    margin-top: 1rem;
+}
+
+.margin-start--1 .margin-top--2 {
+    margin-top: 2rem;
+}
+
+.block-all * {
+    display: block;
+    width: 100%;
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.btn {
+    padding-block: 10px;
+    margin-top: 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(217deg, rgba(112, 181, 198, 0.8), rgba(64, 203, 250, 0) 70.71%), linear-gradient(127deg, #7f56d1, rgba(0, 255, 0, 0.123) 70.71%), linear-gradient(336deg, rgba(60, 128, 197, 0.8), rgba(153, 0, 255, 0.333) 70.71%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.input-group.block-all input {
+    margin-top: 10px;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid #cecece;
+    border-radius: 7px;
+    outline: none;
+    font-size: 1.1rem;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
