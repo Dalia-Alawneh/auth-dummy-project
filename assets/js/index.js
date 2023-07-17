@@ -24,6 +24,8 @@ const setTokenCookie = (token, expirationMinutes) => {
     document.cookie = "token=" + token + "; " + expires + "; path=/";
 }
 
+
+
 signinForm.addEventListener('submit', async (e) => {
     e.preventDefault()
     const usernameInput = document.getElementById('username')
@@ -34,11 +36,8 @@ signinForm.addEventListener('submit', async (e) => {
     }
     const { token } = response
     const expirationMinutes = 60
-    console.log(token);
     setTokenCookie(token, expirationMinutes)
-    console.log(response);
-    window.location.href = '../index.html';
-
+    window.location.href = `../index.html?id=${response.id}`;
 })
 
 
