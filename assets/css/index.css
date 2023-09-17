@@ -28,6 +28,7 @@
     padding: 3rem;
 }
 
+
 .blur--bg {
     background: rgba(255, 255, 255, 0.306);
     backdrop-filter: blur(25px);
