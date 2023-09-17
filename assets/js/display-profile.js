@@ -51,4 +51,4 @@ const displayProfile=s=>{var t=document.querySelector(".profile-img img");consol
             </div>
         </div>
     </div>
-    `};async function generateProfile(){var s=decodeToken()["id"],s=await getData("https://dummyjson.com/users/"+s);displayProfile(s)}generateProfile();
+    `};async function generateProfile(){var s=decodeToken().id,s=await getData("https://dummyjson.com/users/"+s);displayProfile(s)}generateProfile();
