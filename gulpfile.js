@@ -17,5 +17,13 @@ gulp.task('minify-js', function () {
         .pipe(gulp.dest('assets/js')); 
 });
 
+gulp.task('minify-images', async function () {
+    const imagemin = await import('gulp-imagemin');
+
+    return gulp
+        .src('assets/img/*') // Path to your image files
+        .pipe(imagemin.default())
+        .pipe(gulp.dest('assets/img'));
+});
 // Default task
-gulp.task('default', gulp.parallel('minify-css', 'minify-js'));
+gulp.task('default', gulp.parallel('minify-css', 'minify-js', 'minify-images'));
