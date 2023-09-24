@@ -9,21 +9,13 @@ gulp.task('minify-css', function () {
         .pipe(gulp.dest('assets/css'));
 });
 
+
 gulp.task('minify-js', function () {
     return gulp
         .src('assets/js/*.js') // Path to your JavaScript files
         .pipe(uglify())
-        .pipe(gulp.dest('assets/js'));
-});
-
-gulp.task('minify-images', async function () {
-    const imagemin = await import('gulp-imagemin');
-
-    return gulp
-        .src('assets/img/*') // Path to your image files
-        .pipe(imagemin.default())
-        .pipe(gulp.dest('assets/img'));
+        .pipe(gulp.dest('assets/js')); 
 });
 
 // Default task
-gulp.task('default', gulp.parallel('minify-css', 'minify-js', 'minify-images'));
+gulp.task('default', gulp.parallel('minify-css', 'minify-js'));
